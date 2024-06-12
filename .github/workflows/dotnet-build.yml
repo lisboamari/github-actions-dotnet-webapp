@@ -24,16 +24,6 @@ jobs:
     - name: Build
       run: dotnet build **/*.csproj --no-restore
 
-  saying_hi_on_pr:
-    runs-on: ubuntu-latest
-    steps:
-    - name: First interaction
-      uses: actions/first-interaction@v1.3.0
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        pr-message: 'Este é o seu primeiro pull request'
-        issue-message: 'Esta é a sua primeira issue'
-
   saying_hi_on_terminal:
     runs-on: ubuntu-latest
     steps:
